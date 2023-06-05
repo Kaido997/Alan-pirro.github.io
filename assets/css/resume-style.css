@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.resume{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.name {
+    margin-top: 10px;
+}
+.back {
+    font-family: "Pacifico", sans-serif;
+    margin-bottom: 20px;
+}
+.title {
+    font-family: "Pacifico", sans-serif;
+    font-size: larger;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    width: 95%;
+    height: auto;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px lightgrey;
+}
+
+.profile-picture {
+    border: 10px solid #7676ff;
+    height: 200px;
+    width: 200px;
+    border-radius: 400px;
+    z-index: 1;
+}
+
+.profile-picture>img {
+    height: 180px;
+    width: 180px;
+    border-radius: 400px;
+}
+
+.presentation {
+    margin-top: 0px;
+}
+
+.presentation > p {
+    font-style: italic;
+}
+
+.bio {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #7676ff;
+
+}
+section {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+hr {
+    margin-top: 30px;
+    width: 85%;
+    height: 1px ;
+    color: #7676ff46;
+}
+
+
+.list {
+    margin-top: 20px;
+}
+
+
+.list > li {
+    display: block;
+    margin-top: 10px;
+}
+
+.list > li > p {
+    margin-top: 5px;
+}
+
+.description {
+    padding: auto;
+    font-size: small;
+}
+
+.skills>p {
+    margin-top: 30px;
+}
+
+.list-format {
+    margin: 20px 0 5px 35px;
+}
+
+.list-format>p{
+    margin-top: 30px;
+}
+
+
+
+@media only screen and (min-width: 961px) {
+
+    .container {
+        width: 961px;
+        padding: 30px;
+    }
+
+
+    
+    
+}
+
