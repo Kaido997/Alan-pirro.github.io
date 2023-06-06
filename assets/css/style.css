@@ -69,15 +69,6 @@ nav {
 
 }
 
-.links>li>a {
-    text-decoration: none;
-    color: dodgerblue;
-}
-.links>li>a:hover{
-    color: #7676ff;
-    text-decoration: underline;
-}
-
 .logo {
     font-family: "Pacifico", sans-serif ;
     margin-left: 20px;
@@ -115,6 +106,7 @@ nav {
 }
 
 
+
 .bio {
     display: flex;
     flex-direction: column;
@@ -130,6 +122,7 @@ nav {
 .bio > p {
     font-style: italic;
     width: auto;
+    margin-top: 10px;
 }
 
 .intro {
@@ -167,7 +160,7 @@ nav {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin-top: 220px ;
+    margin-top: 240px ;
     margin-bottom: 35px;
     flex-wrap: wrap;
 }
@@ -243,6 +236,7 @@ nav {
     position: absolute;
     top: 940.5px;
     z-index: 2;
+    opacity: 0.8;
 }
 
 .slider {
@@ -289,7 +283,7 @@ form>label{
     margin: 5px 0 5px 0;
 }
 
-form>button{
+.bt-pacifico{
     margin-top: 5px;
     width: min-content;
     font-family: "Pacifico", sans-serif;
@@ -299,16 +293,16 @@ form>button{
     border: 1px solid #7676ff;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.8;  
 }
 
-form>button:hover{
+.bt-pacifico:hover{
     opacity: 1;
     transform: translateY(-1px);
     box-shadow: 1px 1px black;
 }
 
-form>button:active {
+.bt-pacifico:active {
     transform: translateY(1px);
     box-shadow: inset 1px 1px black;
 }
