@@ -290,7 +290,8 @@ form>label{
     border: 1px solid #7676ff;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.8;  
+    opacity: 0.8; 
+    color: black; 
 }
 
 .bt-pacifico:hover{
@@ -300,6 +301,7 @@ form>label{
 }
 
 .bt-pacifico:active {
+    color: black;
     transform: translateY(1px);
     box-shadow: inset 1px 1px black;
 }
