@@ -1,12 +1,31 @@
+:root {
+    --bg-color-main: #2222;
+    --bg-color-container: rgba(0, 0, 0, 0.80);
+    --txt-headings-color: #1782E4;
+    --txt-main-color: #ffff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1 {
+    font-weight: normal;
+    font-size: x-large;
+    color: var(--txt-headings-color);
+
+}
+h5 {
+    font-weight: normal;
+    font-size: large;
+    color: var(--txt-headings-color);
+
+}
 
 body {
-    background-color: #f2f2f2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg-color-main);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .center {
@@ -15,6 +34,9 @@ body {
     align-items: center;
 }
 
+.bio {
+    text-align: center;
+}
 .aside {
     display: flex;
     flex-direction: column;
@@ -22,68 +44,62 @@ body {
 }
 
 .resume{
+    color: var(--txt-main-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
 }
 .name {
     margin-top: 10px;
 }
 .back {
-    font-family: "Pacifico", sans-serif;
+    color: var(--bg-color-container);
+    font-size: large;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .title {
-    font-family: "Pacifico", sans-serif;
     font-size: larger;
     margin: 0;
 }
 .container {
-    background-color: white;
+    background-color: var(--bg-color-container);
     width: 95%;
     height: auto;
     border-radius: 25px;
-    padding: 15px;
-    box-shadow: 5px 5px 15px lightgrey;
+    padding: 40px;
+    box-shadow: 5px 5px 15px var(--bg-color-container);
 }
 
-.profile-picture {
-    border: 10px solid #7676ff;
-    height: 200px;
-    width: 200px;
-    border-radius: 400px;
-    z-index: 1;
+.profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .profile-picture>img {
-    height: 180px;
-    width: 180px;
-    border-radius: 400px;
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
 }
 
-.presentation {
-    margin-top: 0px;
+.intro {
+    align-self: flex-end;
+    max-width: 331px;
+    text-align: right;
+}
+.intro>.name {
+    margin-bottom: 15px;
 }
 
-.presentation > p {
-    font-style: italic;
+.intro>.presentation {
+    font-size: large;
 }
 
-.bio {
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-}
-
-
-h1, h2, h3, h4, h5 {
-    font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #7676ff;
-
-}
 section {
     margin-top: 30px;
     width: 100%;
@@ -134,8 +150,8 @@ hr {
 @media only screen and (min-width: 961px) {
 
     .container {
-        width: 961px;
-        padding: 30px;
+        width: 1024px;
+        padding: 30px 135px 30px 135px;
     }
 
 
