@@ -72,6 +72,7 @@ body {
     border-radius: 25px;
     padding: 40px;
     box-shadow: 5px 5px 15px var(--bg-color-container);
+    text-align: center;
 }
 
 .profile {
@@ -130,7 +131,15 @@ hr {
 
 .description {
     padding: auto;
-    font-size: small;
+    font-size: medium;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .skills>p {
@@ -138,11 +147,17 @@ hr {
 }
 
 .list-format {
-    margin: 20px 0 5px 35px;
+    list-style: none;
 }
 
 .list-format>p{
     margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.list-format>li {
+    margin-top: 10px;
 }
 
 
